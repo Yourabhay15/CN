@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        header nav {
+            margin-left: auto;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        table td {
+            vertical-align: top;
+        }
+
+        .total {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.codingninjas.com/assets-landing/images/CNLOGO.svg" alt="Coding Ninjas Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+
+        <h2>List of User Enrollments</h2>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Enrolled Courses</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+                <td>
+                    <strong>Course ID:</strong> 101<br>
+                    <strong>Course Title:</strong> Web Development<br>
+                    <strong>Course ID:</strong> 102<br>
+                    <strong>Course Title:</strong> Data Science Basics<br>
+                    <strong>Course ID:</strong> 103<br>
+                    <strong>Course Title:</strong> Digital Marketing Strategies
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+                <td>
+                    <strong>Course ID:</strong> 101<br>
+                    <strong>Course Title:</strong> Web Development
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bob Johnson</td>
+                <td>bob.johnson@example.com</td>
+                <td>
+                    <strong>Course ID:</strong> 104<br>
+                    <strong>Course Title:</strong> Mobile App Development
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Alice Williams</td>
+                <td>alice.williams@example.com</td>
+                <td>
+                    <strong>Course ID:</strong> 105<br>
+                    <strong>Course Title:</strong> Machine Learning Fundamentals
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Will Smith</td>
+                <td>will.smith@example.com</td>
+                <td>
+                    <strong>Course ID:</strong> 106<br>
+                    <strong>Course Title:</strong> Android Development
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Sammy Zach</td>
+                <td>sammy.zach@example.com</td>
+                <td>
+                    <strong>Course ID:</strong> 107<br>
+                    <strong>Course Title:</strong> Node JS
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Nancy Drew</td>
+                <td>nancy.drew@example.com</td>
+                <td>
+                    <strong>Course ID:</strong> 108<br>
+                    <strong>Course Title:</strong> React JS
+                </td>
+            </tr>
+        </table>
+        <div class="total">Total Enrollments: 7</div>
+    </div>
+</body>
+</html>
