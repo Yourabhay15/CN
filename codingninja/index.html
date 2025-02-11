@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Ninjas</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      details {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      summary {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+      }
+      nav a:hover,
+      nav a.active {
+        color: #007bff;
+      }
+      header {
+        padding-left: 20px;
+      }
+      header nav {
+        gap: 20px;
+      }
+      main {
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      #courses .course-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .course-card {
+        text-align: center;
+      }
+      .course-card img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      footer img {
+        width: 50px;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Multimedia/new_cn_logo.svg" alt="Coding Ninjas Logo">
+      </div>
+      <h1>Welcome to Coding Ninjas</h1>
+      <details>
+        <summary>Get yourself Registered</summary>
+        <ul>
+          <li><a href="login.html" class="red">Already have an account</a></li>
+          <li><a href="register.html" class="blue">Register</a></li>
+        </ul>
+      </details>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Coding Ninjas is a leading provider of online courses. Our mission is
+          to empower individuals with knowledge and skills essential in today's
+          fast-paced world. Join us in reshaping education and unlocking the
+          full potential of learners worldwide.
+        </p>
+      </section>
+
+      <section id="courses">
+        <h2>Featured Courses</h2>
+        <div class="course-grid">
+          <div class="course-card">
+            <a href="courses.html"><img src="Multimedia/Web_development.jpg" alt="Web Development" /></a>
+            <p>Web Development</p>
+          </div>
+          <div class="course-card">
+            <img src="Multimedia/data-science.jpg" alt="Data Science" />
+            <p>Data Science</p>
+          </div>
+          <div class="course-card">
+            <img src="Multimedia/Digital_Marketing.png" alt="Digital Marketing" />
+            <p>Digital Marketing</p>
+          </div>
+          <div class="course-card">
+            <img src="Multimedia/android_development.jpg" alt="Android Development" />
+            <p>Android Development</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-choose">
+        <h2>Why Choose Coding Ninjas?</h2>
+        <ul>
+          <li>Experienced Instructors</li>
+          <li>Interactive Learning</li>
+          <li>Flexible Materials</li>
+          <li>Access to a Diverse Range of Courses</li>
+        </ul>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+          <p>
+            "I've learned so much from Coding Ninjas' courses. Highly
+            recommended!"
+          </p>
+          <footer>- Prayrit Singh</footer>
+        </blockquote>
+        <blockquote>
+          <p>
+            "The convenience of online learning has allowed me to enhance my
+            skills."
+          </p>
+          <footer>- Jane Smith</footer>
+        </blockquote>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://www.facebook.com/@codingninjas/"><img src="Multimedia/facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/coding.ninjas/?hl=en"><img src="Multimedia/twitter.png" alt="Twitter" /></a>
+        <a href="https://www.linkedin.com/school/codingninjas/?originalSubdomain=in"><img src="Multimedia/linkedin.png" alt="LinkedIn" /></a>
+        <a href="https://x.com/__codingninja?mx=2"><img src="Multimedia/instagram.png" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025, All rights reserved</p>
+      <p>Contact us to learn more!</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coding Ninjas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #007bff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-details p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .map-container {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+
+        .feedback-form {
+            margin-top: 2rem;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .feedback-form input,
+        .feedback-form textarea,
+        .feedback-form select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .feedback-form button {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Multimedia/new_cn_logo.svg" alt="Coding Ninjas Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-details">
+            <h1>Contact Details</h1>
+            <p>For inquiries, you can reach us via email or phone:</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:contact@codingnijas.com">contact@codingnijas.com</a></p>
+                <p>Phone: <a href="tel:1800-123-3598">1800-123-3598</a></p>
+            </div>
+        </section>
+        <section class="location">
+            <h2>Location Map</h2>
+            <div class="map-container">
+                <div id="map">
+                    <iframe
+                      src="https://www.google.co.in/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d77.0548736153153!3d28.443121818568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcf1c1c1c1c1%3A0x1c1c1c1c1c1c1c1!2sCoding%20Ninjas%20is%20a%20Educational%20institution%20located%20at%20UNITECH%20CYBER%20PARK%2C%20Unit%20007%20-%20008%2C%20GF%2C%20Tower%20A%2C%20Durga%20Colony%2C%20Sector%2039%2C%20Gurugram%2C%20Haryana%20122003%2C%20IN.!5e0!3m2!1sen!2sin!4v1631234567890!5m2!1sen!2sin"
+                      width="100%"
+                      height="100%"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="feedback-form">
+            <h2>Feedback Form</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
